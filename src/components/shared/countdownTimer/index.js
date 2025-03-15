@@ -49,8 +49,10 @@ export default function CountdownTimer() {
       {Object.keys(timeLeft).map((key, index) => (
         <div
           key={key}
-          className={`text-5xl font-semibold sm:px-8 px-0 ${
-            index !== Object.keys(timeLeft).length - 1 ? 'border-r-2' : ''
+          className={`text-5xl pt-5 sm:pt-0 font-semibold text-center sm:px-8 px-0 ${
+            index !== Object.keys(timeLeft).length - 1
+              ? 'sm:border-r-2 border-r-0'
+              : ''
           }`}
         >
           <div className="rounded text-black">{timeLeft[key]}</div>

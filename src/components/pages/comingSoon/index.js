@@ -7,7 +7,7 @@ export default function ComingSoon() {
   const currentYear = getCurrentYear();
   return (
     <div className="grid grid-cols-12 gap-4">
-      <div className="sm:col-span-5 col-span-12 p-5 h-100 sm:h-screen">
+      <div className="lg:col-span-5 col-span-12 p-5 h-100 sm:h-screen">
         <Image
           src="/images/landing-img.jpg"
           alt="coming-soon"
@@ -16,7 +16,7 @@ export default function ComingSoon() {
           className="sm:h-full h-100 w-full object-fit rounded-3xl"
         />
       </div>
-      <div className="sm:col-span-7 col-span-12 p-5 mt-10">
+      <div className="lg:col-span-7 col-span-12 p-5 mt-10">
         <Image
           src="/images/logo.png"
           alt="coming-soon"
