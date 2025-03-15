@@ -1,6 +1,4 @@
 import React from 'react';
-import ComingSoonPageHeader from './Header';
-import ContainerComponent from '@/components/shared/container';
 import Image from 'next/image';
 import CountdownTimer from '@/components/shared/countdownTimer';
 import {getCurrentYear} from '@/components/shared/utils/general';
