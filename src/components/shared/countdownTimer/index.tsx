@@ -18,6 +18,7 @@ export default function CountdownTimer() {
       const distance = countDownDate - now;
 
       const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+
       const hours = Math.floor(
         (distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
       );
