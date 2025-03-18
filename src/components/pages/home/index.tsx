@@ -1,5 +1,5 @@
 import React from 'react';
-import TopBar from '@/components/pages/topBar';
+import TopBar from './TopBar';
 import ComingSoon from '../comingSoon';
 
 export default function Home() {
