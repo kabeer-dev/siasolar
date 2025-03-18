@@ -9,7 +9,7 @@ export const generateMetadata = async ({
   const {websiteName, websiteDescription, faviconPath} = await BRANDING();
 
   return {
-    title: `${websiteName}${pageName ? ` - ${pageName}` : ''}`,
+    title: `${websiteName} - ${pageName ?? ''}`,
     description: description || websiteDescription,
     icons: {
       icon: [

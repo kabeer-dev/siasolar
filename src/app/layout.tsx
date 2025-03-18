@@ -16,7 +16,10 @@ const geistMono = Geist_Mono({
 export const metadata = {
   title: 'SIA Solar - Solar Energy Solutions in Pakistan',
   description:
-    'SIA Solar provides high-quality solar solutions, including panels, inverters, and installation services in Pakistan.',
+    'SIA Solar specializes in commercial solar installations, offering expert electrical inspections, consultancy, wiring test reports, earthing systems, and net metering with full verification.',
+  icons: {
+    icon: '/favicon.png',
+  },
 };
 
 export default function RootLayout({children}: RootLayoutProps) {

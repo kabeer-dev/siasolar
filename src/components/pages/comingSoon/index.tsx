@@ -1,10 +1,11 @@
 import React from 'react';
 import Image from 'next/image';
 import CountdownTimer from '@/components/shared/countdownTimer';
-import {getCurrentYear} from '@/components/shared/utils/general';
+import {getCurrentYear} from '@/utils/general';
 
 export default function ComingSoon() {
   const currentYear = getCurrentYear();
+
   return (
     <div className="grid grid-cols-12 gap-4">
       <div className="lg:col-span-5 col-span-12 p-5 h-100 sm:h-screen">
