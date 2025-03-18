@@ -14,7 +14,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata = {
-  title: 'SIA Solar - Solar Energy Solutions in Pakistan',
+  title: 'SIA Solar',
   description:
     'SIA Solar specializes in commercial solar installations, offering expert electrical inspections, consultancy, wiring test reports, earthing systems, and net metering with full verification.',
   icons: {
