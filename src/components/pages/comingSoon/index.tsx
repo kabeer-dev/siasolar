@@ -2,6 +2,7 @@ import React from 'react';
 import Image from 'next/image';
 import CountdownTimer from '@/components/shared/countdownTimer';
 import {getCurrentYear} from '@/utils/general';
+import {SITE_DATA} from '@/constants/general';
 
 export default function ComingSoon() {
   const currentYear = getCurrentYear();
@@ -34,7 +35,8 @@ export default function ComingSoon() {
 
         <div className="mt-50">
           <p className="text-black">
-            Copyright &copy; {currentYear} SIA Solar. All Rights Reserved.
+            Copyright &copy; {currentYear} {SITE_DATA.name}. All Rights
+            Reserved.
           </p>
         </div>
       </div>

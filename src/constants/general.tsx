@@ -8,12 +8,20 @@ export const SITE_METADATA = {
     title: 'Home',
     description: SITE_COMMON_DESCRIPTION,
   },
+  notFoundPage: {
+    title: 'Not Founded',
+    description: SITE_COMMON_DESCRIPTION,
+  },
 };
 
 export const SITE_DATA = {
   name: 'SIA SOLAR',
   email: 'info@siasolar.pk',
   address: 'ABC Street XYZ Road, Lahore, Pakistan',
+};
+
+export const DEVELOPER_DATA = {
+  name: 'Kabeer Ahmed',
 };
 
 export const SOCIAL_ICONS = {
