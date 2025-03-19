@@ -17,7 +17,9 @@ export const SITE_METADATA = {
 export const SITE_DATA = {
   name: 'SIA SOLAR',
   email: 'info@siasolar.pk',
+  phone: '0300-000000',
   address: 'ABC Street XYZ Road, Lahore, Pakistan',
+  description: SITE_COMMON_DESCRIPTION,
 };
 
 export const DEVELOPER_DATA = {
@@ -28,14 +30,40 @@ export const SOCIAL_ICONS = {
   facebook: {
     label: 'Facebook',
     icon: <BsFacebook />,
+    redirectLink: '/#',
   },
   instagram: {
     label: 'Instagram',
     icon: <BsInstagram />,
+    redirectLink: '/#',
   },
   youtube: {
     label: 'Youtube',
     icon: <BsYoutube />,
+    redirectLink: '/#',
+  },
+};
+
+export const PAGES = {
+  home: {
+    name: 'home',
+    label: 'Home',
+  },
+  about: {
+    name: 'about',
+    label: 'About Us',
+  },
+  services: {
+    name: 'services',
+    label: 'Services',
+  },
+  projects: {
+    name: 'projects',
+    label: 'Projects',
+  },
+  contact: {
+    name: 'contact',
+    label: 'Contact Us',
   },
 };
 

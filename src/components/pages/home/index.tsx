@@ -1,12 +1,14 @@
 import React from 'react';
-import TopBar from './TopBar';
+import TopBar from '../../shared/topBar';
 import ComingSoon from '../comingSoon';
+import Footer from '@/components/shared/footer';
 
 export default function Home() {
   return (
     <div>
-      {/* <TopBar /> */}
-      <ComingSoon />
+      <TopBar />
+      <Footer />
+      {/* <ComingSoon /> */}
     </div>
   );
 }

@@ -5,7 +5,7 @@ import {SITE_DATA, SOCIAL_ICONS} from '@/constants/general';
 export default function TopBar() {
   return (
     <div className="sm:h-12 h-auto w-full bg-primary flex items-center">
-      <div className="container mx-auto pl-5 pr-5 grid grid-cols-12 gap-4">
+      <div className="container mx-auto pl-20 pr-20 grid grid-cols-12 gap-4">
         <div className="sm:col-span-8 col-span-12 sm:flex block items-center">
           <div className="flex items-center sm:justify-start justify-center">
             <MdOutlineLocationOn className="mt-0.5" />
