@@ -1,7 +1,7 @@
 import React from 'react';
 import {MdOutlineLocationOn, MdOutlineMailOutline} from 'react-icons/md';
 import {SITE_DATA, SOCIAL_ICONS} from '@/constants/general';
-import ContainerComponent from '@/components/shared/container';
+import ContainerComponent from '@/components/shared/abc';
 
 export default function TopBar() {
   return (

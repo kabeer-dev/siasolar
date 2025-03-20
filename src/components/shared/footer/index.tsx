@@ -7,7 +7,7 @@ import {
   MdOutlineLocationOn,
   MdOutlineMailOutline,
 } from 'react-icons/md';
-import ContainerComponent from '@/components/shared/container';
+import ContainerComponent from '@/components/shared/abc';
 
 export default function Footer() {
   const currentYear = getCurrentYear();
