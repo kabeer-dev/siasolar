@@ -1,3 +1,7 @@
+import {MdSolarPower, MdOutlineThumbUpOffAlt} from 'react-icons/md';
+import {HiOutlineEmojiHappy} from 'react-icons/hi';
+import {BsAward} from 'react-icons/bs';
+
 export const SOLAR_JOURNEY = [
   {
     name: 'assessment',
@@ -29,5 +33,32 @@ export const SOLAR_JOURNEY = [
     description:
       'Body should be in a dignified arrangement; adjust the seasoning.',
     showArrow: false,
+  },
+];
+
+export const BUSINESS_STATICS = [
+  {
+    name: 'project',
+    icon: <MdSolarPower />,
+    label: '1,000+',
+    text: 'Project Done',
+  },
+  {
+    name: 'client',
+    icon: <HiOutlineEmojiHappy />,
+    label: '1,200+',
+    text: 'Happy Clients',
+  },
+  {
+    name: 'award',
+    icon: <BsAward />,
+    label: '850+',
+    text: 'Award Winning',
+  },
+  {
+    name: 'rating',
+    icon: <MdOutlineThumbUpOffAlt />,
+    label: '1,100+',
+    text: 'Rating Customer',
   },
 ];
