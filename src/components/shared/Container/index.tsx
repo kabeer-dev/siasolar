@@ -3,7 +3,9 @@ import PropTypes from 'prop-types';
 
 export default function ContainerComponent({children}) {
   return (
-    <div className="w-full max-w-[1920px] flex self-stretch">{children}</div>
+    <div className="container mx-auto sm:pl-20 sm:pr-20 pl-5 pr-5">
+      {children}
+    </div>
   );
 }
 
