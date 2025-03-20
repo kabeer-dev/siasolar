@@ -2,7 +2,7 @@ import React from 'react';
 import AnimationArrow from '@/components/shared/animationArrow';
 import Image from 'next/image';
 import {SOLAR_JOURNEY} from '@/constants/home';
-import ContainerComponent from '@/components/shared/abc';
+import ContainerComponent from '@/components/shared/container';
 
 export default function SolarJourney() {
   return (
