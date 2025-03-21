@@ -39,26 +39,26 @@ export const SOLAR_JOURNEY = [
 export const BUSINESS_STATICS = [
   {
     name: 'project',
-    icon: <MdSolarPower />,
-    label: '1,000+',
-    text: 'Project Done',
+    img: '/images/solar-sun.svg',
+    number: 1000,
+    title: 'Project Done',
   },
   {
     name: 'client',
-    icon: <HiOutlineEmojiHappy />,
-    label: '1,200+',
-    text: 'Happy Clients',
+    img: '/images/happy-client.svg',
+    number: 1200,
+    title: 'Happy Clients',
   },
   {
     name: 'award',
-    icon: <BsAward />,
-    label: '850+',
-    text: 'Award Winning',
+    img: '/images/medal-award.svg',
+    number: 850,
+    title: 'Award Winning',
   },
   {
     name: 'rating',
-    icon: <MdOutlineThumbUpOffAlt />,
-    label: '1,100+',
-    text: 'Rating Customer',
+    img: '/images/thumb-rating.svg',
+    number: 1100,
+    title: 'Rating Customer',
   },
 ];

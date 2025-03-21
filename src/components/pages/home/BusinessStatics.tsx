@@ -1,6 +1,8 @@
 import React from 'react';
 import ContainerComponent from '@/components/shared/container';
 import {BUSINESS_STATICS} from '@/constants/home';
+import Image from 'next/image';
+import CounterAnimation from '@/components/shared/counterAnimation';
 
 export default function BusinessStatics() {
   return (
@@ -10,18 +12,27 @@ export default function BusinessStatics() {
         <ContainerComponent>
           <div className="grid lg:grid-cols-4 sm:grid-cols-2 grid-cols-1 gap-4">
             {BUSINESS_STATICS.map((item) => (
-              <div
-                key={item.name}
-                className="flex sx:justify-start justify-center items-center mt-5"
-              >
-                <div>
-                  <div className="w-20 h-18 bg-primary flex justify-center items-center rounded-3xl">
-                    <p className="text-5xl text-white">{item.icon}</p>
+              <div key={item.name} className="flex justify-center items-center">
+                <div className="grid grid-cols-12 mt-5">
+                  <div className="sm:col-span-3 col-span-2 col-start-4">
+                    <div className="bg-primary p-3 xl:rounded-3xl rounded-2xl">
+                      <Image
+                        src={item.img}
+                        alt={item.name}
+                        height={50}
+                        width={50}
+                      />
+                    </div>
                   </div>
-                </div>
-                <div className="pl-4">
-                  <p className="text-white text-3xl font-bold">{item.label}</p>
-                  <p className="text-primary">{item.text}</p>
+                  <div className="sm:col-span-8 col-span-6 pl-4">
+                    <CounterAnimation number={item.number} title={item.title} />
+                    {/* <div>
+                      <p className="text-white text-3xl font-bold">
+                        {item.label}
+                      </p>
+                      <p className="text-primary">{item.text}</p>
+                    </div> */}
+                  </div>
                 </div>
               </div>
             ))}
