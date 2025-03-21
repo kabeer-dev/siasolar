@@ -1,7 +1,3 @@
-import {MdSolarPower, MdOutlineThumbUpOffAlt} from 'react-icons/md';
-import {HiOutlineEmojiHappy} from 'react-icons/hi';
-import {BsAward} from 'react-icons/bs';
-
 export const SOLAR_JOURNEY = [
   {
     name: 'assessment',
@@ -39,26 +35,57 @@ export const SOLAR_JOURNEY = [
 export const BUSINESS_STATICS = [
   {
     name: 'project',
-    img: '/images/solar-sun.svg',
+    img: '/images/solar-panel.png',
     number: 1000,
     title: 'Project Done',
   },
   {
     name: 'client',
-    img: '/images/happy-client.svg',
+    img: '/images/energy-hand.png',
     number: 1200,
     title: 'Happy Clients',
   },
   {
     name: 'award',
-    img: '/images/medal-award.svg',
+    img: '/images/medal.png',
     number: 850,
     title: 'Award Winning',
   },
   {
     name: 'rating',
-    img: '/images/thumb-rating.svg',
+    img: '/images/thumb-up.png',
     number: 1100,
     title: 'Rating Customer',
+  },
+];
+
+export const ENERGY_SOLUTIONS = [
+  {
+    name: 'efficiency',
+    img: '/images/solar-house-primary.png',
+    title: 'Efficiency & Power',
+    description:
+      'Go forth, O rose. In the protection of the edge, grow and become pure. But the greatest is the thread.',
+  },
+  {
+    name: 'trust',
+    img: '/images/award-primary.png',
+    title: 'Trust & Warranty',
+    description:
+      'As for love, he laughs. In the fringes of comfort, he possesses pure excellence. But greatness lies in simplicity.',
+  },
+  {
+    name: 'high-Quality-work',
+    img: '/images/thumb-up-primary.png',
+    title: 'High Quality Work',
+    description:
+      'As for love, he laughs. In the embrace of comfort, he possesses pure excellence. But greatness lies in simplicity.',
+  },
+  {
+    name: 'support',
+    img: '/images/support-primary.png',
+    title: '24*7 Support',
+    description:
+      'Go, go, you are smiling. In the fringed embrace of light, you own the purest of extremes. But the greatness is within the thread.',
   },
 ];

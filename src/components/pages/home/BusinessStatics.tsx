@@ -26,12 +26,6 @@ export default function BusinessStatics() {
                   </div>
                   <div className="sm:col-span-8 col-span-6 pl-4">
                     <CounterAnimation number={item.number} title={item.title} />
-                    {/* <div>
-                      <p className="text-white text-3xl font-bold">
-                        {item.label}
-                      </p>
-                      <p className="text-primary">{item.text}</p>
-                    </div> */}
                   </div>
                 </div>
               </div>

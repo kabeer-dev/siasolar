@@ -6,7 +6,7 @@ import ContainerComponent from '@/components/shared/container';
 
 export default function SolarJourney() {
   return (
-    <div className="bg-[#f2f8f5]">
+    <div className="bg-[#eff1ed]">
       <ContainerComponent>
         <div className="pt-10 pb-10">
           <p className="text-center sm:text-xl font-semibold">
