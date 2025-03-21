@@ -1,5 +1,6 @@
 import React from 'react';
 import {MdOutlineLocationOn, MdOutlineMailOutline} from 'react-icons/md';
+import {BsFillTelephoneFill} from 'react-icons/bs';
 import {SITE_DATA, SOCIAL_ICONS} from '@/constants/general';
 import ContainerComponent from '@/components/shared/container';
 
@@ -10,13 +11,13 @@ export default function TopBar() {
         <div className="grid grid-cols-12 gap-4">
           <div className="sm:col-span-9 col-span-12 sm:flex block items-center">
             <div className="flex items-center sm:justify-start justify-center">
-              <MdOutlineLocationOn className="mt-0.5" />
-              <p className="ml-1 font-semibold">{SITE_DATA.address}</p>
+              <MdOutlineMailOutline className="mt-1" />
+              <p className="ml-2 font-semibold">{SITE_DATA.email}</p>
             </div>
 
             <div className="flex items-center lg:ml-5 ml-3 sm:justify-start justify-center">
-              <MdOutlineMailOutline className="mt-0.5" />
-              <p className="ml-1 font-semibold">{SITE_DATA.email}</p>
+              <BsFillTelephoneFill className="mt-0.5" />
+              <p className="ml-2 font-semibold">{SITE_DATA.phone}</p>
             </div>
           </div>
 
