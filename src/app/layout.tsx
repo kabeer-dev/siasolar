@@ -2,6 +2,7 @@ import {Geist, Geist_Mono} from 'next/font/google';
 import {Analytics} from '@vercel/analytics/react';
 import './globals.css';
 import {RootLayoutProps} from '@/interfaces/general';
+import ReduxProvider from '@/providers/reduxProvider';
 
 const geistSans = Geist({
   variable: '--font-geist-sans',
@@ -26,8 +27,10 @@ export default function RootLayout({children}: RootLayoutProps) {
   return (
     <html lang="en">
       <body className={`${geistSans.variable} ${geistMono.variable}`}>
-        {children}
-        <Analytics />
+        <ReduxProvider>
+          {children}
+          <Analytics />
+        </ReduxProvider>
       </body>
     </html>
   );
