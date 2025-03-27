@@ -6,7 +6,7 @@ import CountUp from 'react-countup';
 export default function CounterAnimation({
   number,
   title,
-}: Readonly<CounterAnimationProps>) {
+}: CounterAnimationProps) {
   return (
     <div>
       <CountUp

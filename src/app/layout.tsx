@@ -22,7 +22,7 @@ export const metadata = {
   },
 };
 
-export default function RootLayout({children}: Readonly<RootLayoutProps>) {
+export default function RootLayout({children}: RootLayoutProps) {
   return (
     <html lang="en">
       <body className={`${geistSans.variable} ${geistMono.variable}`}>

@@ -62,28 +62,28 @@ export const BUSINESS_STATICS = [
 export const ENERGY_SOLUTIONS = [
   {
     name: 'efficiency',
-    img: '/images/solar-house-primary.png',
+    img: '/images/solar-house-primary-color.png',
     title: 'Efficiency & Power',
     description:
       'Go forth, O rose. In the protection of the edge, grow and become pure. But the greatest is the thread.',
   },
   {
     name: 'trust',
-    img: '/images/award-primary.png',
+    img: '/images/award-primary-color.png',
     title: 'Trust & Warranty',
     description:
       'As for love, he laughs. In the fringes of comfort, he possesses pure excellence. But greatness lies in simplicity.',
   },
   {
     name: 'high-Quality-work',
-    img: '/images/thumb-up-primary.png',
+    img: '/images/thumb-primary-color.png',
     title: 'High Quality Work',
     description:
       'As for love, he laughs. In the embrace of comfort, he possesses pure excellence. But greatness lies in simplicity.',
   },
   {
     name: 'support',
-    img: '/images/support-primary.png',
+    img: '/images/support-primary-color.png',
     title: '24*7 Support',
     description:
       'Go, go, you are smiling. In the fringed embrace of light, you own the purest of extremes. But the greatness is within the thread.',

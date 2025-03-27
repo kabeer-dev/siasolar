@@ -1,5 +1,5 @@
 import React from 'react';
-import ContainerComponent from '@/components/shared/container';
+import Container from '@/components/layout/container';
 import {BUSINESS_STATICS} from '@/constants/home';
 import Image from 'next/image';
 import CounterAnimation from '@/components/shared/counterAnimation';
@@ -9,7 +9,7 @@ export default function BusinessStatics() {
     <div className="bg-primary bg-cover bg-center w-full relative flex items-center sm:pt-12 pt-7 sm:pb-15 pb-10">
       <div className="bg-black w-full opacity-80 absolute top-0 left-0 h-full"></div>
       <div className="relative w-full">
-        <ContainerComponent>
+        <Container>
           <div className="grid lg:grid-cols-4 sm:grid-cols-2 grid-cols-1 gap-4">
             {BUSINESS_STATICS.map((item) => (
               <div key={item.name} className="flex justify-center items-center">
@@ -31,7 +31,7 @@ export default function BusinessStatics() {
               </div>
             ))}
           </div>
-        </ContainerComponent>
+        </Container>
       </div>
     </div>
   );

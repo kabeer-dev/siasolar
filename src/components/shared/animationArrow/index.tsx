@@ -1,9 +1,7 @@
 import {AnimationArrowProps} from '@/interfaces/general';
 import React from 'react';
 
-export default function AnimationArrow({
-  arrowImage,
-}: Readonly<AnimationArrowProps>) {
+export default function AnimationArrow({arrowImage}: AnimationArrowProps) {
   return (
     <div
       className="absolute w-[100px] h-[40px] lg:bg-gradient-to-r bg-gradient-to-b from-[var(--primary)] via-[#ffffff] to-[var(--primary-foreground)] lg:bg-[length:300%_100%] bg-[length:100%_300%] lg:animate-[colorRun_4s_linear_infinite] animate-[colorRunVertical_4s_linear_infinite]"

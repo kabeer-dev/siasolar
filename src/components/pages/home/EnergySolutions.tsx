@@ -1,18 +1,19 @@
 import React from 'react';
-import ContainerComponent from '@/components/shared/container';
+import Container from '@/components/layout/container';
 import Image from 'next/image';
 import {ENERGY_SOLUTIONS} from '@/constants/home';
 
 export default function EnergySolutions() {
   return (
     <div className="bg-[#eff1ed] pt-20 pb-20">
-      <ContainerComponent>
+      <Container>
         <div className="flex justify-center">
           <Image
             src={'/images/electricity.svg'}
             alt="electricity"
-            height={18}
-            width={18}
+            height={13}
+            width={13}
+            className="mt-[2px]"
           />
           <p className="text-primary font-semibold pl-2">WHY CHOOSE US</p>
         </div>
@@ -50,7 +51,7 @@ export default function EnergySolutions() {
             </div>
           ))}
         </div>
-      </ContainerComponent>
+      </Container>
     </div>
   );
 }

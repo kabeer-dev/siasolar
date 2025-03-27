@@ -2,12 +2,12 @@ import React from 'react';
 import AnimationArrow from '@/components/shared/animationArrow';
 import Image from 'next/image';
 import {SOLAR_JOURNEY} from '@/constants/home';
-import ContainerComponent from '@/components/shared/container';
+import Container from '@/components/layout/container';
 
 export default function SolarJourney() {
   return (
     <div className="bg-[#eff1ed]">
-      <ContainerComponent>
+      <Container>
         <div className="pt-10 pb-10">
           <p className="text-center sm:text-xl font-semibold">
             *__ End-to-End Services __*
@@ -57,7 +57,7 @@ export default function SolarJourney() {
             ))}
           </div>
         </div>
-      </ContainerComponent>
+      </Container>
     </div>
   );
 }

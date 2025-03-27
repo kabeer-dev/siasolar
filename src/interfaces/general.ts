@@ -1,7 +1,11 @@
-import {ReactNode} from 'react';
+import {Dispatch, ReactNode, SetStateAction} from 'react';
 
 export interface RootLayoutProps {
-  readonly children: ReactNode;
+  children: ReactNode;
+}
+
+export interface OptionalRootLayoutProps {
+  children?: ReactNode;
 }
 
 export interface ThemeButtonProps {
@@ -11,10 +15,15 @@ export interface ThemeButtonProps {
 }
 
 export interface AnimationArrowProps {
-  readonly arrowImage: string;
+  arrowImage: string;
 }
 
 export interface CounterAnimationProps {
-  readonly number: number;
-  readonly title: string;
+  number: number;
+  title: string;
+}
+
+export interface NavbarProps {
+  setOpenSideBar: Dispatch<SetStateAction<Boolean>>;
+  openSideBar?: Boolean;
 }

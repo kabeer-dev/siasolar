@@ -1,32 +1,34 @@
 import React from 'react';
-import ContainerComponent from '@/components/shared/container';
+import Container from '@/components/layout/container';
 import Image from 'next/image';
 
 export default function CallSolution() {
   return (
     <div className="py-15">
-      <ContainerComponent>
-        <div className="grid grid-cols-12 relative">
-          {/* <div className="absolute top-20 left-66 bg-primary p-4 border-white border-7 rounded-full">
-            <Image
-              src="/images/telephone.png"
-              alt="telephone"
-              height={40}
-              width={40}
-            />
+      <Container>
+        <div className="grid grid-cols-12">
+          {/* <div className="absolute top-0 left-0 bg-primary p-4 border-white border-7 rounded-full">
+            <div>
+              <Image
+                src="/images/telephone.png"
+                alt="telephone"
+                height={40}
+                width={40}
+              />
+            </div>
           </div> */}
-          <div className="col-span-3">
+          <div className="sm:col-span-3 col-span-12">
             <Image
               src="/images/man-working.jpg"
               alt="man-working"
               height={100}
               width={100}
-              className="w-full h-full object-cover rounded-tl-3xl rounded-bl-3xl"
+              className="w-full sm:h-full h-50 object-cover rounded-tl-3xl sm:rounded-bl-3xl rounded-bl-none sm:rounded-tr-none rounded-tr-3xl"
             />
           </div>
 
-          <div className="col-span-9 bg-[#eff1ed] rounded-tr-3xl rounded-br-3xl p-15">
-            <p className="text-4xl font-bold">
+          <div className="sm:col-span-9 col-span-12 bg-[#eff1ed] sm:rounded-tr-3xl rounded-tr-none sm:rounded-bl-none rounded-bl-3xl rounded-br-3xl sm:p-15 p-5">
+            <p className="sm:text-4xl text-xl font-bold">
               Have Questions? <span className="text-primary">Call Us</span>{' '}
               800-001-658
             </p>
@@ -36,7 +38,7 @@ export default function CallSolution() {
             </p>
           </div>
         </div>
-      </ContainerComponent>
+      </Container>
     </div>
   );
 }
