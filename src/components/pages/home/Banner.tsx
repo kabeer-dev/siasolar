@@ -36,8 +36,8 @@ export default function Banner() {
                   </p>
                 </div>
                 <p className="text-6xl text-white font-extrabold mt-2 leading-tight">
-                  Powering the Future With <br />
-                  <span className="text-primary">Renewable.</span>
+                  Your Energy, Your <br />
+                  <span className="text-primary">Independence.</span>
                 </p>
 
                 <p className="mt-5 text-white text-md font-semibold leading-7">
