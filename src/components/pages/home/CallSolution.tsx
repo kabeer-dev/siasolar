@@ -1,22 +1,13 @@
 import React from 'react';
 import Container from '@/components/layout/container';
 import Image from 'next/image';
+import {SITE_DATA} from '@/constants/general';
 
 export default function CallSolution() {
   return (
     <div className="py-15">
       <Container>
         <div className="grid grid-cols-12">
-          {/* <div className="absolute top-0 left-0 bg-primary p-4 border-white border-7 rounded-full">
-            <div>
-              <Image
-                src="/images/telephone.png"
-                alt="telephone"
-                height={40}
-                width={40}
-              />
-            </div>
-          </div> */}
           <div className="sm:col-span-3 col-span-12">
             <Image
               src="/images/man-working.jpg"
@@ -27,10 +18,10 @@ export default function CallSolution() {
             />
           </div>
 
-          <div className="sm:col-span-9 col-span-12 bg-[#eff1ed] sm:rounded-tr-3xl rounded-tr-none sm:rounded-bl-none rounded-bl-3xl rounded-br-3xl sm:p-15 p-5">
-            <p className="sm:text-4xl text-xl font-bold">
+          <div className="sm:col-span-9 col-span-12 bg-[#eff1ed] sm:rounded-tr-3xl rounded-tr-none sm:rounded-bl-none rounded-bl-3xl rounded-br-3xl lg:p-15 p-5">
+            <p className="lg:text-4xl text-2xl font-bold">
               Have Questions? <span className="text-primary">Call Us</span>{' '}
-              800-001-658
+              {SITE_DATA.phone}
             </p>
             <p className="pt-5">
               It is a long established fact that a reader will be distracted by

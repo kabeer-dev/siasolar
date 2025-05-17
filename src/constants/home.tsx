@@ -36,25 +36,25 @@ export const BUSINESS_STATICS = [
   {
     name: 'project',
     img: '/images/solar-panel.png',
-    number: 1000,
+    number: 100,
     title: 'Project Done',
   },
   {
     name: 'client',
     img: '/images/energy-hand.png',
-    number: 1200,
+    number: 97,
     title: 'Happy Clients',
   },
   {
     name: 'award',
     img: '/images/medal.png',
-    number: 850,
+    number: 5,
     title: 'Award Winning',
   },
   {
     name: 'rating',
     img: '/images/thumb-up.png',
-    number: 1100,
+    number: 95,
     title: 'Rating Customer',
   },
 ];

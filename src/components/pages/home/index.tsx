@@ -1,5 +1,4 @@
 import React from 'react';
-import TopBar from '../../layout/topBar';
 import ComingSoon from '../comingSoon';
 import Banner from './Banner';
 import CallSolution from './CallSolution';
@@ -12,10 +11,9 @@ import Footer from '@/components/layout/footer';
 export default function Home() {
   return (
     <div>
-      {/* <TopBar /> */}
       <Banner />
       <CallSolution />
-      {/* <MainVideo /> */}
+      <MainVideo />
       <EnergySolutions />
       <BusinessStatics />
       <SolarJourney />

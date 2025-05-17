@@ -1,5 +1,8 @@
 'use client';
+import Container from '@/components/layout/container';
+import Image from 'next/image';
 import React, {useEffect, useRef, useState} from 'react';
+import {FaPlay, FaPause} from 'react-icons/fa';
 
 export default function MainVideo() {
   const videoRef = useRef<HTMLVideoElement | null>(null);
@@ -44,18 +47,44 @@ export default function MainVideo() {
   };
 
   return (
-    <div className="grid grid-cols-1">
-      <video
-        ref={videoRef}
-        className={`w-full h-[500px] object-cover ${
-          isPaused ? 'cursor-pointer' : 'cursor-none'
-        }`}
-        src="/images/slider-test.mkv"
-        muted
-        loop
-        playsInline
-        onClick={togglePlayPause}
-      />
+    <div className="bg-[#eff1ed]">
+      <div className="grid grid-cols-1 pt-10">
+        <Container>
+          <Image
+            src={'/images/logo.png'}
+            alt="logo"
+            height={80}
+            width={80}
+            className="mx-auto"
+          />
+          <p className="text-center text-3xl font-bold mt-2">
+            <span className="text-primary">SIA Solar</span> - Your Partner in
+            Solar Revolution
+          </p>
+        </Container>
+      </div>
+      <div className="relative grid grid-cols-1 mt-10 group">
+        <video
+          ref={videoRef}
+          className={`w-full h-[500px] object-cover 
+          cursor-pointer`}
+          src="/images/slider-test.mkv"
+          muted
+          loop
+          playsInline
+          onClick={togglePlayPause}
+        />
+
+        <div
+          className="absolute inset-0 bg-opacity-30 flex items-center justify-center 
+        transition-opacity duration-300 group-hover:opacity-100 opacity-0 rounded-xl cursor-pointer"
+          onClick={togglePlayPause}
+        >
+          <div className="text-primary text-5xl animate-none transition-all duration-300">
+            {isPaused ? <FaPlay /> : <FaPause />}
+          </div>
+        </div>
+      </div>
     </div>
   );
 }

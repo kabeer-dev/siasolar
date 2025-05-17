@@ -1,6 +1,4 @@
-import {BsInstagram} from 'react-icons/bs';
-import {FaFacebookF} from 'react-icons/fa6';
-import {FiYoutube} from 'react-icons/fi';
+import {BsFacebook, BsInstagram, BsYoutube} from 'react-icons/bs';
 
 const SITE_COMMON_DESCRIPTION =
   'SIA Solar specializes in commercial solar installations, offering expert electrical inspections, consultancy, wiring test reports, earthing systems, and net metering with full verification.';
@@ -8,6 +6,14 @@ const SITE_COMMON_DESCRIPTION =
 export const SITE_METADATA = {
   homePage: {
     title: 'Home',
+    description: SITE_COMMON_DESCRIPTION,
+  },
+  contactPage: {
+    title: 'Contact Us',
+    description: SITE_COMMON_DESCRIPTION,
+  },
+  underDevelopmentPage: {
+    title: 'Under Development',
     description: SITE_COMMON_DESCRIPTION,
   },
   notFoundPage: {
@@ -19,30 +25,31 @@ export const SITE_METADATA = {
 export const SITE_DATA = {
   name: 'SIA SOLAR',
   email: 'info@siasolar.pk',
-  phone: '+92 300-000000',
-  address: 'ABC Street XYZ Road, Lahore, Pakistan',
+  phone: '+92 3400001069',
+  address: 'Madina Colony, Jinnah Road Gujranwala, Pakistan',
   description: SITE_COMMON_DESCRIPTION,
 };
 
 export const DEVELOPER_DATA = {
   name: 'Kabeer Ahmed',
+  portfolioLink: 'https://kabeer-ahmed.vercel.app',
 };
 
 export const SOCIAL_ICONS = {
   facebook: {
     label: 'Facebook',
-    icon: <FaFacebookF />,
-    redirectLink: '/#',
+    icon: <BsFacebook />,
+    redirectLink: 'https://www.facebook.com/share/1AL814r3Ha',
   },
   instagram: {
     label: 'Instagram',
     icon: <BsInstagram />,
-    redirectLink: '/#',
+    redirectLink: 'https://www.instagram.com/sia_solarr',
   },
   youtube: {
     label: 'Youtube',
-    icon: <FiYoutube />,
-    redirectLink: '/#',
+    icon: <BsYoutube />,
+    redirectLink: 'https://www.youtube.com/channel/UCWPjO2BcgdNiC_0qmjPxXwg',
   },
 };
 
@@ -50,27 +57,27 @@ export const PAGES = {
   home: {
     name: 'home',
     label: 'Home',
-    redirectUrl: '/home',
+    redirectUrl: '/',
   },
   about: {
     name: 'about',
     label: 'About Us',
-    redirectUrl: '/about',
+    redirectUrl: '/under-development',
   },
   services: {
     name: 'services',
     label: 'Services',
-    redirectUrl: '/services',
+    redirectUrl: '/under-development',
   },
   projects: {
     name: 'projects',
     label: 'Projects',
-    redirectUrl: '/projects',
+    redirectUrl: '/under-development',
   },
   contact: {
     name: 'contact',
     label: 'Contact Us',
-    redirectUrl: '/contact',
+    redirectUrl: '/under-development',
   },
 };
 
