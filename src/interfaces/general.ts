@@ -1,3 +1,4 @@
+import {Akaya_Kanadaka} from 'next/font/google';
 import {Dispatch, ReactNode, SetStateAction} from 'react';
 
 export interface RootLayoutProps {
@@ -26,4 +27,14 @@ export interface CounterAnimationProps {
 export interface NavbarProps {
   setOpenSideBar: Dispatch<SetStateAction<Boolean>>;
   openSideBar?: Boolean;
+}
+
+export interface LandingBannerProps {
+  pageLabel: string;
+}
+
+export interface TryCatchProps<T = any> {
+  success: boolean;
+  response?: T;
+  error?: any;
 }

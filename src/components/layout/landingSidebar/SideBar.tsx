@@ -3,7 +3,10 @@ import {NavbarProps} from '@/interfaces/general';
 import React from 'react';
 import {ImCross} from 'react-icons/im';
 
-export default function SideBar({setOpenSideBar, openSideBar}: NavbarProps) {
+export default function LandingSideBar({
+  setOpenSideBar,
+  openSideBar,
+}: NavbarProps) {
   return (
     <div
       className={`bg-white ${
