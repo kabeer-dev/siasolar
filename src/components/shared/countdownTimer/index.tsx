@@ -9,7 +9,7 @@ export default function CountdownTimer() {
     seconds: 0,
   });
 
-  const countDownDate = new Date('May 01, 2025 00:00:00').getTime();
+  const countDownDate = new Date('Aug 14, 2026 00:00:00').getTime();
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -46,18 +46,13 @@ export default function CountdownTimer() {
   }, [countDownDate]);
 
   return (
-    <div className="sm:flex block justify-center items-center mt-20">
-      {Object.keys(timeLeft).map((key, index) => (
-        <div
-          key={key}
-          className={`text-5xl pt-5 sm:pt-0 font-semibold text-center sm:px-8 px-0 ${
-            index !== Object.keys(timeLeft).length - 1
-              ? 'sm:border-r-2 border-r-0'
-              : ''
-          }`}
-        >
-          <div className="rounded text-black">{timeLeft[key]}</div>
-          <div className="mt-3 text-xl text-gray-600 capitalize">{key}</div>
+    <div className="flex justify-center items-center w-full bg-white/70 backdrop-blur-sm border border-gray-200 rounded-2xl shadow-sm px-2 py-4 divide-x divide-gray-200">
+      {Object.keys(timeLeft).map((key) => (
+        <div key={key} className="flex-1 flex flex-col items-center px-2">
+          <div className="text-2xl font-bold text-gray-800">
+            {String(timeLeft[key as keyof typeof timeLeft]).padStart(2, '0')}
+          </div>
+          <div className="text-xs text-gray-500 capitalize mt-1">{key}</div>
         </div>
       ))}
     </div>
