@@ -122,11 +122,11 @@ export default function ComingSoon() {
 
         {/* Tagline */}
         <div className="flex items-center gap-3 mb-6">
-          <div className="h-px w-10 bg-green-600" />
-          <p className="text-xs tracking-[0.2em] font-semibold text-green-700 uppercase">
+          <div className="h-px w-10 bg-brand" />
+          <p className="text-xs tracking-[0.2em] font-semibold text-brand-dark uppercase">
             Solar Today Saving Forever
           </p>
-          <div className="h-px w-10 bg-green-600" />
+          <div className="h-px w-10 bg-brand" />
         </div>
 
         {/* Coming Soon heading */}
@@ -161,7 +161,7 @@ export default function ComingSoon() {
         <p className="text-gray-600 text-sm mb-6 leading-relaxed">
           We are working hard to launch something{' '}
           <span className="text-yellow-500 font-semibold">bright</span> and{' '}
-          <span className="text-green-600 font-semibold">sustainable</span> for
+          <span className="text-brand font-semibold">sustainable</span> for
           you.
         </p>
 
@@ -175,7 +175,7 @@ export default function ComingSoon() {
               key={i}
               className="flex-1 flex flex-col items-center py-4 px-2 gap-2"
             >
-              <div className="text-green-600">{f.icon}</div>
+              <div className="text-brand">{f.icon}</div>
               <p className="text-xs font-bold text-gray-700 tracking-wide whitespace-pre-line leading-tight">
                 {f.label}
               </p>
@@ -184,8 +184,8 @@ export default function ComingSoon() {
         </div>
 
         {/* Banner */}
-        <div className="mt-5 w-full flex items-center gap-3 border border-green-600 rounded-full px-5 py-3">
-          <div className="text-green-600 shrink-0">
+        <div className="mt-5 w-full flex items-center gap-3 border border-brand rounded-full px-5 py-3">
+          <div className="text-brand shrink-0">
             <svg
               viewBox="0 0 24 24"
               fill="none"
@@ -204,7 +204,7 @@ export default function ComingSoon() {
           </div>
           <p className="text-sm text-gray-700">
             Powering a greener tomorrow with{' '}
-            <span className="text-green-600 font-semibold">
+            <span className="text-brand font-semibold">
               smart solar solutions.
             </span>
           </p>
@@ -222,9 +222,9 @@ export default function ComingSoon() {
           <div className="flex flex-wrap justify-center gap-4 text-sm text-gray-700">
             <a
               href={`tel:${SITE_DATA.phone}`}
-              className="flex items-center gap-2 hover:text-green-600 transition-colors"
+              className="flex items-center gap-2 hover:text-brand transition-colors"
             >
-              <div className="w-8 h-8 rounded-full bg-green-600 flex items-center justify-center text-white shrink-0">
+              <div className="w-8 h-8 rounded-full bg-brand flex items-center justify-center text-white shrink-0">
                 <svg
                   viewBox="0 0 24 24"
                   fill="currentColor"
@@ -237,9 +237,9 @@ export default function ComingSoon() {
             </a>
             <a
               href={`mailto:${SITE_DATA.email}`}
-              className="flex items-center gap-2 hover:text-green-600 transition-colors"
+              className="flex items-center gap-2 hover:text-brand transition-colors"
             >
-              <div className="w-8 h-8 rounded-full bg-green-600 flex items-center justify-center text-white shrink-0">
+              <div className="w-8 h-8 rounded-full bg-brand flex items-center justify-center text-white shrink-0">
                 <svg
                   viewBox="0 0 24 24"
                   fill="currentColor"
@@ -251,7 +251,7 @@ export default function ComingSoon() {
               {SITE_DATA.email}
             </a>
             <span className="flex items-center gap-2">
-              <div className="w-8 h-8 rounded-full bg-green-600 flex items-center justify-center text-white shrink-0">
+              <div className="w-8 h-8 rounded-full bg-brand flex items-center justify-center text-white shrink-0">
                 <svg
                   viewBox="0 0 24 24"
                   fill="currentColor"

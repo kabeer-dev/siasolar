@@ -1,24 +1,21 @@
-import React from 'react';
-import ComingSoon from '../comingSoon';
-import Banner from './Banner';
-import CallSolution from './CallSolution';
-import MainVideo from './MainVideo';
-import EnergySolutions from './EnergySolutions';
-import BusinessStatics from './BusinessStatics';
-import SolarJourney from './SolarJourney';
-import Footer from '@/components/layout/footer';
+import HeroSection from './HeroSection';
+import CommitmentSection from './CommitmentSection';
+import SolutionsSection from './SolutionsSection';
+import ImpactSection from './ImpactSection';
+import PortfolioSection from './PortfolioSection';
+import CompaniesSection from './CompaniesSection';
+import TestimonialsSection from './TestimonialsSection';
 
-export default function Home() {
+export default function HomePage() {
   return (
-    <div>
-      <Banner />
-      <CallSolution />
-      <MainVideo />
-      <EnergySolutions />
-      <BusinessStatics />
-      <SolarJourney />
-      <Footer />
-      {/* <ComingSoon /> */}
-    </div>
+    <>
+      <HeroSection />
+      <CommitmentSection />
+      <SolutionsSection />
+      <ImpactSection />
+      <PortfolioSection />
+      <CompaniesSection />
+      <TestimonialsSection />
+    </>
   );
 }
